@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app='MsgApp'>
 <head>
     <meta charset="UTF-8">
     <script src="angular.min.js"></script>
-    <script src="app.js"></script>
+    <!--<script src="app.js"></script>
     <script src="appLec4.js"></script>
     <script src="appLec5.js"></script>
+    <script src="appLec9.js"></script>-->
+    <script src="appLec11.js"></script>
     <style>body {
         font-size: 1.5em;
     }</style>
@@ -14,11 +16,29 @@
 <body>
 <hr>
 <h1>This is Angular JS development </h1>
+<div ng-controller='MsgController'>
+    {{name}} has a message for you: <br>
+    {{sayMessage()}}
+    <div>
+        <button ng-click="feedCostas()">Feed Costas</button>
+        <br>
+
+        <img ng-src="images/{{stateOfBeing}}.png">
+    </div>
+</div>
+<!--
+<h3>Dependency Injection in Javascript</h3>
+<div ng-controller="DIController">
+    <input type="text"
+            ng-model="name"
+            ng-blur="upper();"
+    >
+</div>
 <h2>Use browser synch</h2>
 <h3>Sync Works Fine!</h3>
 <hr>
 <h1>Low Cohesion and Tight Coupling</h1>
-<!--<div id="nameCalculator">
+<div id="nameCalculator">
     <div>
         Your name: <input type="text" id="name">
     </div>
@@ -33,7 +53,7 @@
         <input type="text" ng-model="sayHello()">
         Inside my input is my name as a function: {{sayHello()}}
     </div>
-</div>-->
+</div>
 <div ng-app="MyNameCalculator">
 <h1>Name Calculator</h1>
 <div ng-controller="MyNameCalculatorController">
@@ -64,5 +84,6 @@
     console.log(elem2.getAttribute('ng-app'));
 
 </script>
+-->
 </body>
 </html>
