@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app='MsgApp'>
+<html ng-app='CounterApp'>
 <head>
     <meta charset="UTF-8">
     <script src="angular.min.js"></script>
@@ -7,7 +7,7 @@
     <script src="appLec4.js"></script>
     <script src="appLec5.js"></script>
     <script src="appLec9.js"></script>-->
-    <script src="appLec11.js"></script>
+    <script src="appLec14.js"></script>
     <style>body {
         font-size: 1.5em;
     }</style>
@@ -16,6 +16,20 @@
 <body>
 <hr>
 <h1>This is Angular JS development </h1>
+<div ng-controller='CounterController'>
+    <button ng-click="showNumberOfWatchers()">
+        Log # of Watchers</button>
+    <input type="text" ng-model="name">
+    <div>
+        <button ng-click="countOnce()">Up Once Counter (once)</button>
+        <button ng-click="upCounter()">Increment Counter</button>
+    </div>
+    <div>
+        Once counter: {{ onceCounter }} <br>
+        Regular counter: {{ counter }}
+    </div>
+</div>
+<!--
 <h1>Custom Filters</h1>
 <div ng-controller='MsgController'>
     Original: {{sayMessage()}} <br>
@@ -31,7 +45,7 @@
 </div>
 
 
-<!--
+
 <div ng-controller='MsgController'>
     {{name}} has a message for you: <br>
     {{sayMessage()}}
