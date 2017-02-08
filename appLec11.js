@@ -5,20 +5,44 @@
     'use strict';
 
     angular.module('MsgApp', [])
-        .controller('MsgController', MsgController);
+        .controller('MsgController', MsgController)
+        .filter('loves', LovesFilter)
+        .filter('truth', TruthFilter);
 
-    MsgController.$inject = ['$scope'];
-    function MsgController($scope) {
-        $scope.name = "Costas";
+    MsgController.$inject = ['$scope', 'lovesFilter'];
+    function MsgController($scope, lovesFilter) {
         $scope.stateOfBeing = "Athanasiou";
 
         $scope.sayMessage = function () {
-            return "Costas likes to develop JS!";
+            var msg = "Yaakov likes to eat healthy snacks at night!";
+            return msg;
         };
 
-        $scope.feedCostas = function () {
+        $scope.sayLovesMessage = function () {
+            var msg = "Yaakov likes to eat healthy snacks at night!";
+            msg = lovesFilter(msg)
+            return msg;
+        };
+
+        $scope.feedYaakov = function () {
             $scope.stateOfBeing = "develop";
         };
+    }
+
+    function LovesFilter() {
+        return function (input) {
+            input = input || "";
+            input = input.replace("likes", "loves");
+            return input;
+        };
+    }
+
+    function TruthFilter() {
+        return function (input, target, replace) {
+            input = input || "";
+            input = input.replace(target, replace);
+            return input;
+        }
     }
 
 })();

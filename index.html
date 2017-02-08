@@ -16,17 +16,34 @@
 <body>
 <hr>
 <h1>This is Angular JS development </h1>
+<h1>Custom Filters</h1>
 <div ng-controller='MsgController'>
-    {{name}} has a message for you: <br>
-    {{sayMessage()}}
+    Original: {{sayMessage()}} <br>
+    Loves: {{ sayLovesMessage() }} <br>
+    Truth: {{ sayLovesMessage() | truth : 'healthy' : 'cookie' }} <br>
+    BIG TRUTH: {{ sayLovesMessage() | truth : 'healthy' : 'cookie' | uppercase }}
     <div>
-        <button ng-click="feedCostas()">Feed Costas</button>
+        <button ng-click="feedYaakov()">Feed Yaakov</button>
         <br>
 
         <img ng-src="images/{{stateOfBeing}}.png">
     </div>
 </div>
+
+
 <!--
+<div ng-controller='MsgController'>
+    {{name}} has a message for you: <br>
+    {{sayMessage()}}
+    <div>
+        <button ng-click="feedCostas()">Feed Costas</button>
+        Cost: {{cookieCost | currency: "#blah" : 4 }}
+        <br>
+
+        <img ng-src="images/{{stateOfBeing}}.png">
+    </div>
+</div>
+
 <h3>Dependency Injection in Javascript</h3>
 <div ng-controller="DIController">
     <input type="text"
