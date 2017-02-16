@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script src="angular.min.js"></script>
-    <!--<script src="app.js"></script>
-    <script src="appLec4.js"></script>
-    <script src="appLec5.js"></script>
-    <script src="appLec9.js"></script>-->
-    <script src="appLec14.js"></script>
+    <script src="appLec24.js"></script>
     <style>body {
         font-size: 1.5em;
     }</style>
@@ -16,7 +12,22 @@
 <body>
 <hr>
 <h1>This is Angular JS development </h1>
-<div ng-controller='CounterController'>
+
+<div ng-controller='ShoppingListController as list'>
+      <h3>Shopping List</h3>
+      <input type="text" ng-model="list.itemName" placeholder="item name">
+      <input type="text" ng-model="list.itemQuantity" placeholder="quantity"> boxes
+      <button ng-click="list.addItem();">Add Item</button>
+      <ol>
+        <li ng-repeat="item in list.items">
+          {{ item.quantity }} boxes of {{ item.name }}
+          <button ng-click="list.removeItem($index);">Remove Item</button>
+        </li>
+      </ol>
+    </div>
+
+
+<!--<div ng-controller='CounterController'>
     <button ng-click="showNumberOfWatchers()">
         Log # of Watchers</button>
     <input type="text" ng-model="name">
@@ -28,7 +39,7 @@
         Once counter: {{ onceCounter }} <br>
         Regular counter: {{ counter }}
     </div>
-</div>
+</div>-->
 <!--
 <h1>Custom Filters</h1>
 <div ng-controller='MsgController'>
