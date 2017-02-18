@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1ad2b53-522d-4952-8b79-d7ae1540d154" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/appLec31.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery-3.1.0.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -549,7 +546,7 @@
       <workItem from="1486570624083" duration="4942000" />
       <workItem from="1487262883836" duration="2228000" />
       <workItem from="1487350369891" duration="594000" />
-      <workItem from="1487402856510" duration="1995000" />
+      <workItem from="1487402856510" duration="2020000" />
     </task>
     <task id="LOCAL-00001" summary="Init Angular Sync">
       <created>1486062805032</created>
@@ -621,11 +618,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487404043705</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Angular Lec 31">
+      <created>1487406894130</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1487406894130</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29814000" />
+    <option name="totallyTimeSpent" value="29839000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="713" y="0" width="734" height="867" extended-state="0" />
@@ -695,7 +699,8 @@
     <MESSAGE value="Angular Lec 28" />
     <MESSAGE value="Angular Lec 29" />
     <MESSAGE value="Angular Lec 30" />
-    <option name="LAST_COMMIT_MESSAGE" value="Angular Lec 30" />
+    <MESSAGE value="Angular Lec 31" />
+    <option name="LAST_COMMIT_MESSAGE" value="Angular Lec 31" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
