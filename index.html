@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script src="angular.min.js"></script>
-    <script src="appLec29.js"></script>
+    <script src="appLec30.js"></script>
     <link rel="stylesheet" href="styles.css">
     <style>body {
         font-size: 1.5em;
@@ -13,16 +13,31 @@
 <body>
 <hr>
 <h1>This is Angular JS development </h1>
-<!--Lec 29-->
+<!--Lec 30-->
 <!-- LIST #1 - unlimited items -->
 <div id="list" ng-controller='ShoppingListController as list'>
+    <input type="text" ng-model="list.itemName" placeholder="item name">
+    <input type="text" ng-model="list.itemQuantity" placeholder="quantity">
+    <button ng-click="list.addItem();">Add Item</button>
+    <span>{{ list.lastRemoved }}</span>
+
+    <shopping-list
+            items="list.items"
+            title="{{list.title}}"
+            bad-remove="list.removeItem"
+            on-remove="list.removeItem(index)"></shopping-list>
+
+</div>
+<!--Lec 29-->
+<!-- LIST #1 - unlimited items -->
+<!--<div id="list" ng-controller='ShoppingListController as list'>
     <input type="text" ng-model="list.itemName" placeholder="item name">
     <input type="text" ng-model="list.itemQuantity" placeholder="quantity">
     <button ng-click="list.addItem();">Add Item</button>
 
     <shopping-list items="list.items" title="{{list.title}}"></shopping-list>
 
-</div>
+</div>-->
 <!--Lec 28-->
 <!-- LIST #1 - unlimited items -->
 <!--<div id="list1" ng-controller='ShoppingListController1 as list1'>
