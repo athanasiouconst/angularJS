@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html ng-app='ShoppingListDirectiveApp'>
+<html ng-app='ShoppingListComponentApp'>
 <head>
     <meta charset="UTF-8">
     <script src="jquery-3.1.0.min.js"></script>
     <script src="angular.min.js"></script>
-    <script src="appLec32.js"></script>
+    <script src="appLec33.js"></script>
     <link rel="stylesheet" href="styles.css">
     <style>body {
         font-size: 1.5em;
@@ -14,9 +14,22 @@
 <body>
 <hr>
 <h1>This is Angular JS development </h1>
+<!--Lec 33-->
+<div id="list" ng-controller='ShoppingListController as list'>
+    <input type="text" ng-model="list.itemName" placeholder="item name">
+    <input type="text" ng-model="list.itemQuantity" placeholder="quantity">
+    <button ng-click="list.addItem();">Add Item</button>
+    <span>{{ list.lastRemoved }}</span>
+
+    <shopping-list
+            items="list.items"
+            title="{{list.title}}"
+            on-remove="list.removeItem(index)"></shopping-list>
+
+</div>
 <!--Lec 32-->
 <!-- LIST #1 - unlimited items -->
-<div id="list" ng-controller='ShoppingListController as list'>
+<!--<div id="list" ng-controller='ShoppingListController as list'>
     <div>
         <input type="text" ng-model="list.itemName" placeholder="item name">
         <input type="text" ng-model="list.itemQuantity" placeholder="quantity">
@@ -47,7 +60,7 @@
 
     </shopping-list>
 
-</div>
+</div>-->
 
 <!--Lec 31-->
 <!-- LIST #1 - unlimited items -->

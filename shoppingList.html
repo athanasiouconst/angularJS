@@ -1,3 +1,14 @@
+
+<h3>Title: {{ $ctrl.myTitle }}</h3>
+<ol>
+  <li ng-repeat="item in $ctrl.items">
+    {{ item.quantity }} of {{ item.name }}
+    <button ng-click="$ctrl.remove($index);">Remove Item</button>
+  </li>
+</ol>
+<div class="error">WARNING! WARNING! COOKIES DETECTED!</div>
+
+<!--
 <h3>Title: {{ list.myTitle }}</h3>
 <ol>
   <li ng-repeat="item in list.items">
@@ -6,6 +17,7 @@
   </li>
 </ol>
 <div class="error" ng-transclude></div>
+-->
 
 
 
