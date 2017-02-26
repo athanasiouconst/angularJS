@@ -1,20 +1,206 @@
+<!--Lec 41-->
 <!DOCTYPE html>
-<html ng-app='ShoppingListComponentApp'>
+<html ng-app='ShoppingList'>
 <head>
-    <meta charset="UTF-8">
-    <script src="jquery-3.1.0.min.js"></script>
-    <script src="angular.min.js"></script>
-    <script src="appLec33.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <style>body {
-        font-size: 1.5em;
-    }</style>
-    <title>Angular JS</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Lec41/css/styles.css">
+    <title>No Cookie Shopping List</title>
 </head>
 <body>
-<hr>
-<h1>This is Angular JS development </h1>
-<!--Lec 33-->
+<h1>Welcome to Premade No Cookie Shopping List</h1>
+
+<ui-view></ui-view>
+
+<loading-spinner></loading-spinner>
+
+<!-- Libraries -->
+<script src="Lec41/lib/angular.min.js"></script>
+<script src="Lec41/lib/angular-ui-router.min.js"></script>
+
+<!-- Modules -->
+<script src="Lec41/src/shoppinglist/shoppinglist.module.js"></script>
+<script src="Lec41/src/spinner/spinner.module.js"></script>
+
+<!-- Routes -->
+<script src="Lec40/src/routes.js"></script>
+
+<!-- 'ShoppingList' module artifacts -->
+<script src="Lec41/src/shoppinglist/shoppinglist.component.js"></script>
+<script src="Lec41/src/shoppinglist/main-shoppinglist.controller.js"></script>
+<script src="Lec41/src/shoppinglist/shoppinglist.service.js"></script>
+<script src="Lec41/src/shoppinglist/item-detail.controller.js"></script>
+
+<!-- 'Spinner' module artifacts -->
+<script src="Lec41/src/spinner/loadingspinner.component.js"></script>
+
+</body>
+</html>
+
+<!--Lec 40-->
+<!--<!DOCTYPE html>
+<html ng-app='ShoppingList'>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Lec40/css/styles.css">
+    <title>No Cookie Shopping List</title>
+</head>
+<body>
+<h1>Welcome to Premade No Cookie Shopping List</h1>
+
+<ui-view></ui-view>
+
+&lt;!&ndash; Libraries &ndash;&gt;
+<script src="Lec40/lib/angular.min.js"></script>
+<script src="Lec40/lib/angular-ui-router.min.js"></script>
+
+&lt;!&ndash; Modules &ndash;&gt;
+<script src="Lec40/src/shoppinglist/shoppinglist.module.js"></script>
+
+&lt;!&ndash; Routes &ndash;&gt;
+<script src="Lec40/src/routes.js"></script>
+
+&lt;!&ndash; 'ShoppingList' module artifacts &ndash;&gt;
+<script src="Lec40/src/shoppinglist/shoppinglist.component.js"></script>
+<script src="Lec40/src/shoppinglist/main-shoppinglist.controller.js"></script>
+<script src="Lec40/src/shoppinglist/shoppinglist.service.js"></script>
+<script src="Lec40/src/shoppinglist/item-detail.controller.js"></script>
+
+</body>
+</html>-->
+
+<!--Lec 39-->
+<!--<!DOCTYPE html>
+<html ng-app='ShoppingList'>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Lec39/css/styles.css">
+    <title>No Cookie Shopping List</title>
+</head>
+<body>
+<h1>Welcome to Premade No Cookie Shopping List</h1>
+
+<ui-view></ui-view>
+
+&lt;!&ndash; Libraries &ndash;&gt;
+<script src="Lec39/lib/angular.min.js"></script>
+<script src="Lec39/lib/angular-ui-router.min.js"></script>
+
+&lt;!&ndash; Modules &ndash;&gt;
+<script src="Lec39/src/shoppinglist/shoppinglist.module.js"></script>
+
+&lt;!&ndash; Routes &ndash;&gt;
+<script src="Lec39/src/routes.js"></script>
+
+&lt;!&ndash; 'ShoppingList' module artifacts &ndash;&gt;
+<script src="Lec39/src/shoppinglist/shoppinglist.component.js"></script>
+<script src="Lec39/src/shoppinglist/main-shoppinglist.controller.js"></script>
+<script src="Lec39/src/shoppinglist/shoppinglist.service.js"></script>
+<script src="Lec39/src/shoppinglist/item-detail.controller.js"></script>
+
+</body>
+</html>-->
+
+<!--Lec 38-->
+<!--<!DOCTYPE html>
+<html ng-app='ShoppingList'>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Lec38/css/styles.css">
+    <title>No Cookie Shopping List</title>
+</head>
+<body>
+<h1>Welcome to Premade No Cookie Shopping List</h1>
+
+<ui-view></ui-view>
+
+&lt;!&ndash; Libraries &ndash;&gt;
+<script src="Lec38/lib/angular.min.js"></script>
+<script src="Lec38/lib/angular-ui-router.min.js"></script>
+
+&lt;!&ndash; Modules &ndash;&gt;
+<script src="Lec38/src/shoppinglist/shoppinglist.module.js"></script>
+
+&lt;!&ndash; Routes &ndash;&gt;
+<script src="Lec38/src/routes.js"></script>
+
+&lt;!&ndash; 'ShoppingList' module artifacts &ndash;&gt;
+<script src="Lec38/src/shoppinglist/shoppinglist.component.js"></script>
+<script src="Lec38/src/shoppinglist/main-shoppinglist.controller.js"></script>
+<script src="Lec38/src/shoppinglist/shoppinglist.service.js"></script>
+
+</body>
+</html>-->
+
+<!--Lec 37-->
+<!--<!DOCTYPE html>
+<html ng-app='ShoppingList'>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>No Cookie Shopping List</title>
+</head>
+<body>
+<h1>Welcome to Premade No Cookie Shopping List</h1>
+
+<ui-view></ui-view>
+
+&lt;!&ndash; Libraries &ndash;&gt;
+<script src="lib/angular.min.js"></script>
+<script src="lib/angular-ui-router.min.js"></script>
+
+&lt;!&ndash; Modules &ndash;&gt;
+<script src="src/shoppinglist/shoppinglist.module.js"></script>
+
+&lt;!&ndash; Routes &ndash;&gt;
+<script src="src/routes.js"></script>
+
+&lt;!&ndash; 'ShoppingList' module artifacts &ndash;&gt;
+<script src="src/shoppinglist/shoppinglist.component.js"></script>
+<script src="src/shoppinglist/main-shoppinglist.controller.js"></script>
+<script src="src/shoppinglist/shoppinglist.service.js"></script>
+
+</body>
+</html>-->
+
+<!--Lec 36-->
+<!--<!DOCTYPE html>
+<html ng-app='RoutingApp'>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Intro to ui-router</title>
+</head>
+<body>
+<h1>Intro to ui-router</h1>
+
+<div class="tabs">
+    <a ui-sref="tab1" ui-sref-active="activeTab">Tab 1</a>
+    <a ui-sref="tab2" ui-sref-active="activeTab">Tab 2</a>
+    &lt;!&ndash; <button ui-sref="tab2">Tab 2</button> &ndash;&gt;
+</div>
+
+<ui-view></ui-view>
+
+&lt;!&ndash; Libraries &ndash;&gt;
+<script src="lib/angular.min.js"></script>
+<script src="lib/angular-ui-router.min.js"></script>
+
+&lt;!&ndash; Modules &ndash;&gt;
+<script src="src/appLec36.js"></script>
+
+</body>
+</html>-->
+
+<!--Lec 35-->
+<!--<!DOCTYPE html>
+<html ng-app='ShoppingList'>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Shopping List With Events</title>
+</head>
+<body>
+<h1>Shopping List With Events:</h1>
 <div id="list" ng-controller='ShoppingListController as list'>
     <input type="text" ng-model="list.itemName" placeholder="item name">
     <input type="text" ng-model="list.itemQuantity" placeholder="quantity">
@@ -27,9 +213,79 @@
             on-remove="list.removeItem(index)"></shopping-list>
 
 </div>
-<!--Lec 32-->
-<!-- LIST #1 - unlimited items -->
-<!--<div id="list" ng-controller='ShoppingListController as list'>
+
+<loading-spinner></loading-spinner>
+
+&lt;!&ndash; Libraries &ndash;&gt;
+<script src="lib/jquery-3.1.0.min.js"></script>
+<script src="lib/angular.min.js"></script>
+
+&lt;!&ndash; Modules &ndash;&gt;
+
+<script src="src/shoppinglist/shoppinglist.module.js"></script>
+<script src="src/spinner/spinner.module.js"></script>
+
+&lt;!&ndash; 'ShoppingList' module artifacts &ndash;&gt;
+<script src="src/shoppinglist/shoppinglist.component.js"></script>
+<script src="src/shoppinglist/shoppinglist.controller.js"></script>
+<script src="src/shoppinglist/shoppinglist.factory.js"></script>
+<script src="src/shoppinglist/weightlossfilter.service.js"></script>
+
+&lt;!&ndash; 'Spinner' module artifacts &ndash;&gt;
+<script src="src/spinner/loadingspinner.component.js"></script>
+
+</body>
+</html>-->
+
+<!--
+<!DOCTYPE html>
+<html ng-app='ShoppingListEventsApp'>
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="appLec34.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>body {
+        font-size: 1.5em;
+    }</style>
+    <title>Angular JS</title>
+</head>
+<body>
+<hr>
+<h1>This is Angular JS development </h1>
+&lt;!&ndash;Lec 34&ndash;&gt;
+&lt;!&ndash;<h1>Shopping List With Events:</h1>
+<div id="list" ng-controller='ShoppingListController as list'>
+    <input type="text" ng-model="list.itemName" placeholder="item name">
+    <input type="text" ng-model="list.itemQuantity" placeholder="quantity">
+    <button ng-click="list.addItem();">Add Item</button>
+    <span>{{ list.lastRemoved }}</span>
+
+    <shopping-list
+            items="list.items"
+            title="{{list.title}}"
+            on-remove="list.removeItem(index)"></shopping-list>
+
+</div>
+
+<loading-spinner></loading-spinner>&ndash;&gt;
+&lt;!&ndash;Lec 33&ndash;&gt;
+&lt;!&ndash;<div id="list" ng-controller='ShoppingListController as list'>
+    <input type="text" ng-model="list.itemName" placeholder="item name">
+    <input type="text" ng-model="list.itemQuantity" placeholder="quantity">
+    <button ng-click="list.addItem();">Add Item</button>
+    <span>{{ list.lastRemoved }}</span>
+
+    <shopping-list
+            items="list.items"
+            title="{{list.title}}"
+            on-remove="list.removeItem(index)"></shopping-list>
+
+</div>&ndash;&gt;
+&lt;!&ndash;Lec 32&ndash;&gt;
+&lt;!&ndash; LIST #1 - unlimited items &ndash;&gt;
+&lt;!&ndash;<div id="list" ng-controller='ShoppingListController as list'>
     <div>
         <input type="text" ng-model="list.itemName" placeholder="item name">
         <input type="text" ng-model="list.itemQuantity" placeholder="quantity">
@@ -60,11 +316,11 @@
 
     </shopping-list>
 
-</div>-->
+</div>&ndash;&gt;
 
-<!--Lec 31-->
-<!-- LIST #1 - unlimited items -->
-<!--<div id="list" ng-controller='ShoppingListController as list'>
+&lt;!&ndash;Lec 31&ndash;&gt;
+&lt;!&ndash; LIST #1 - unlimited items &ndash;&gt;
+&lt;!&ndash;<div id="list" ng-controller='ShoppingListController as list'>
     <input type="text" ng-model="list.itemName" placeholder="item name">
     <input type="text" ng-model="list.itemQuantity" placeholder="quantity">
     <button ng-click="list.addItem();">Add Item</button>
@@ -74,10 +330,10 @@
             items="list.items"
             title="{{list.title}}"
             on-remove="list.removeItem(index)"></shopping-list>
-</div>-->
-<!--Lec 30-->
-<!-- LIST #1 - unlimited items -->
-<!--<div id="list" ng-controller='ShoppingListController as list'>
+</div>&ndash;&gt;
+&lt;!&ndash;Lec 30&ndash;&gt;
+&lt;!&ndash; LIST #1 - unlimited items &ndash;&gt;
+&lt;!&ndash;<div id="list" ng-controller='ShoppingListController as list'>
     <input type="text" ng-model="list.itemName" placeholder="item name">
     <input type="text" ng-model="list.itemQuantity" placeholder="quantity">
     <button ng-click="list.addItem();">Add Item</button>
@@ -89,20 +345,20 @@
             bad-remove="list.removeItem"
             on-remove="list.removeItem(index)"></shopping-list>
 
-</div>-->
-<!--Lec 29-->
-<!-- LIST #1 - unlimited items -->
-<!--<div id="list" ng-controller='ShoppingListController as list'>
+</div>&ndash;&gt;
+&lt;!&ndash;Lec 29&ndash;&gt;
+&lt;!&ndash; LIST #1 - unlimited items &ndash;&gt;
+&lt;!&ndash;<div id="list" ng-controller='ShoppingListController as list'>
     <input type="text" ng-model="list.itemName" placeholder="item name">
     <input type="text" ng-model="list.itemQuantity" placeholder="quantity">
     <button ng-click="list.addItem();">Add Item</button>
 
     <shopping-list items="list.items" title="{{list.title}}"></shopping-list>
 
-</div>-->
-<!--Lec 28-->
-<!-- LIST #1 - unlimited items -->
-<!--<div id="list1" ng-controller='ShoppingListController1 as list1'>
+</div>&ndash;&gt;
+&lt;!&ndash;Lec 28&ndash;&gt;
+&lt;!&ndash; LIST #1 - unlimited items &ndash;&gt;
+&lt;!&ndash;<div id="list1" ng-controller='ShoppingListController1 as list1'>
     <input type="text" ng-model="list1.itemName" placeholder="item name">
     <input type="text" ng-model="list1.itemQuantity" placeholder="quantity">
     <button ng-click="list1.addItem();">Add Item</button>
@@ -119,8 +375,8 @@
 
     <shopping-list my-list="list2" title="Shopping List #2 (limited to 3 items)"></shopping-list>
     <div ng-if="list2.errorMessage" class="error">Error: {{list2.errorMessage}}</div>
-</div>-->
-<!--&lt;!&ndash;Lec 27&ndash;&gt;
+</div>&ndash;&gt;
+&lt;!&ndash;&lt;!&ndash;Lec 27&ndash;&gt;
 &lt;!&ndash; LIST #1 - unlimited items &ndash;&gt;
 <div id="list1" ng-controller='ShoppingListController1 as list'>
     <h3>Shopping List #1</h3>
@@ -143,8 +399,8 @@
         <list-item ng-repeat="item in list.items"></list-item>
     </ol>
     <div ng-if="list.errorMessage" class="error">Error: {{list.errorMessage}}</div>
-</div>-->
-<!--&lt;!&ndash; LIST #1 - unlimited items &ndash;&gt;
+</div>&ndash;&gt;
+&lt;!&ndash;&lt;!&ndash; LIST #1 - unlimited items &ndash;&gt;
     <div id="list1" ng-controller='ShoppingListController1 as list'>
       <h3>Shopping List #1</h3>
       <input type="text" ng-model="list.itemName" placeholder="item name">
@@ -166,9 +422,9 @@
         <list-item ng-repeat="item in list.items"></list-item>
       </ol>
       <div ng-if="list.errorMessage" class="error">Error: {{list.errorMessage}}</div>
-    </div>-->
+    </div>&ndash;&gt;
 
-<!--    <div ng-controller='MenuCategoriesController as menu'>
+&lt;!&ndash;    <div ng-controller='MenuCategoriesController as menu'>
       <h3>List of Menu Categories</h3>
       <ul>
         <li ng-repeat="category in menu.categories">
@@ -176,9 +432,9 @@
           {{ category.name }}
         </li>
       </ul>
-    </div>-->
+    </div>&ndash;&gt;
 
-<!--<div ng-controller='ShoppingListController as list'>
+&lt;!&ndash;<div ng-controller='ShoppingListController as list'>
       <h3>Shopping List</h3>
       <input type="text" ng-model="list.itemName" placeholder="item name">
       <input type="text" ng-model="list.itemQuantity" placeholder="quantity"> boxes
@@ -189,10 +445,10 @@
           <button ng-click="list.removeItem($index);">Remove Item</button>
         </li>
       </ol>
-    </div>-->
+    </div>&ndash;&gt;
 
 
-<!--<div ng-controller='CounterController'>
+&lt;!&ndash;<div ng-controller='CounterController'>
     <button ng-click="showNumberOfWatchers()">
         Log # of Watchers</button>
     <input type="text" ng-model="name">
@@ -204,8 +460,8 @@
         Once counter: {{ onceCounter }} <br>
         Regular counter: {{ counter }}
     </div>
-</div>-->
-<!--
+</div>&ndash;&gt;
+&lt;!&ndash;
 <h1>Custom Filters</h1>
 <div ng-controller='MsgController'>
     Original: {{sayMessage()}} <br>
@@ -291,6 +547,6 @@
     console.log(elem2.getAttribute('ng-app'));
 
 </script>
--->
+&ndash;&gt;
 </body>
-</html>
+</html>-->

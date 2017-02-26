@@ -8,6 +8,22 @@ body {
   display: none;
 }
 
+.loading-icon {
+  position: absolute;
+  left: calc(100% / 2);
+  top: 10px;
+}
+/*
+body {
+  font-size: 1.2em;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
 #list1, #list2 {
   float: left;
 }
@@ -21,3 +37,4 @@ body {
 .title {
   background-color: #383838;
 }
+*/
